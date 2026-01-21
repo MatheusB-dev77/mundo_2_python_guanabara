@@ -15,5 +15,23 @@ elif idade > 25:
     print('Categoria: \033[1;31mMASTER\033[m')
 
 #professor guanabara
+from datetime import date
+atual = date.today().year
+nascimento = int(input('Digite o ano de nascimento:'))
+idade = atual - nascimento
+
+print('O atleta tem {} anos.'.format(idade))
+if idade <= 9:
+    print('Categoria: MIRIM')
+elif idade <= 14:
+    print('Classificação: INFANTIL')
+elif idade <= 19:
+    print('Categoria: JUNIOR ')
+elif idade <= 25:
+    print('categoria: SÊNIOR')
+elif idade > 25:
+    print('categoria: MASTER')
+
+
 
 
