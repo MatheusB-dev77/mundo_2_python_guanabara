@@ -6,7 +6,8 @@ if media >= 8:
     print('Parabén pelo seu excelente trabalho! Sua nota {}'.format(media))
 elif media >= 7:
     print('Suas nostas foram {} e {} e voce aprovado com média {}.'.format(n1, n2, media))
-elif media >= 6:
+elif media >= 5 and media < 7:
     print('Infelizmente você não conseguiu corresponder com as expectativas e sua media foi {}'.format(media))
-elif media < 6:
-    print('Precisamos melhorar')
+    print('Recuperação')
+elif media < 5:
+    print('Reprovado')
